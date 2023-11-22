@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>869.6,2153.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>869.6,3198.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Initialization_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -116,7 +116,7 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="3. Template.xlsx 파일을 Output로 Copy하기&#xA;- 기존 파일 있으면 삭제 후 생성&#xA;4. DataTable 생성. [연도], [월], [집행액] 으로 생성. 1월~6월까지 데이터 넣기&#xA;5. 브라우저 열어서 데이터 추출할 페이지로 이동" DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="608,2088.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="3. Template.xlsx 파일을 Output로 Copy하기&#xA;- 기존 파일 있으면 삭제 후 생성&#xA;4. DataTable 생성. [연도], [월], [집행액] 으로 생성. 1월~6월까지 데이터 넣기&#xA;5. 브라우저 열어서 데이터 추출할 페이지로 이동" DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="635.2,3133.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:DateTime" Default="[Today]" Name="tmpIndex" />
       <Variable x:TypeArguments="scg:List(x:String)" Name="listSheets" />
@@ -127,8 +127,8 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="545.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
-    <Sequence sap2010:Annotation.AnnotationText="Template.xlsx 파일을 Output로 Copy하기&#xA;- 파일 있을 경우 삭제 후 Copy" DisplayName="Sequence - Copy File" sap:VirtualizedContainerService.HintSize="545.6,127.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
+    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="572.8,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
+    <Sequence sap2010:Annotation.AnnotationText="Template.xlsx 파일을 Output로 Copy하기&#xA;- 파일 있을 경우 삭제 후 Copy" DisplayName="Sequence - Copy File" sap:VirtualizedContainerService.HintSize="572.8,127.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="isFileExists" />
       </Sequence.Variables>
@@ -163,10 +163,10 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:CopyFile>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="DataTable 생성. [연도], [월], [집행액] 으로 생성. 1월~6월까지(Config에 세팅한값) 데이터 넣기" DisplayName="Sequence - Build Data Table" sap:VirtualizedContainerService.HintSize="545.6,127.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence sap2010:Annotation.AnnotationText="DataTable 생성. [항목], [연도], [월], [집행액] 으로 생성. 1월~6월까지(Config에 세팅한값) 데이터 넣기" DisplayName="Sequence - Build Data Table" sap:VirtualizedContainerService.HintSize="572.8,1172" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
@@ -228,7 +228,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InterruptibleWhile>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Templete.xlsx에서 [2023년 01월 - 기본] 시트를 Copy해서 검색하려는 월별 시트 생성하기.&#xA;- 기본 시트는 [종합], [2023년 01월 - 기본] 2개 있음. 기본 세팅으로 고정된 정보&#xA;- 엑셀 &gt; 시트정보 가져오기(listSheets(1))" DisplayName="Sequence - Excel sheet setting" sap:VirtualizedContainerService.HintSize="545.6,175.2" sap2010:WorkflowViewState.IdRef="Sequence_33">
+    <Sequence sap2010:Annotation.AnnotationText="Templete.xlsx에서 [2023년 01월 - 기본] 시트를 Copy해서 검색하려는 월별 시트 생성하기.&#xA;- 기본 시트는 [종합], [2023년 01월 - 기본] 2개 있음. 기본 세팅으로 고정된 정보&#xA;- 엑셀 &gt; 시트정보 가져오기(listSheets(1))" DisplayName="Sequence - Excel sheet setting" sap:VirtualizedContainerService.HintSize="572.8,175.2" sap2010:WorkflowViewState.IdRef="Sequence_33">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -277,7 +277,7 @@
         </ui:ExcelApplicationScope.Body>
       </ui:ExcelApplicationScope>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="브라우저 열어서 데이터 추출할 페이지로 이동" DisplayName="Sequence - open Browser" sap:VirtualizedContainerService.HintSize="545.6,1168.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
+    <Sequence sap2010:Annotation.AnnotationText="브라우저 열어서 데이터 추출할 페이지로 이동" DisplayName="Sequence - open Browser" sap:VirtualizedContainerService.HintSize="572.8,1168.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>

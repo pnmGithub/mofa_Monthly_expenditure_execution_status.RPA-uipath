@@ -471,7 +471,7 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <Transition.Condition>[SystemException IsNot Nothing]</Transition.Condition>
                   <Transition.To>
-                    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="[정보 초기화 영역]&#xA;1. Config 파일 세팅&#xA;2. 브라우저 강제 종료&#xA;3. Template.xlsx 파일을 Output로 Copy하기&#xA;4. DataTable 생성. [연도], [월], [집행액] 으로 생성. Config에 설정한 날짜 기간 데이터 넣기&#xA;5. 브라우저 열어서 데이터 추출할 페이지로 이동&#xA;" DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="480,201.6" sap2010:WorkflowViewState.IdRef="State_2">
+                    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="[정보 초기화 영역]&#xA;1. Config 파일 세팅&#xA;2. 브라우저 강제 종료&#xA;3. Template.xlsx 파일을 Output로 Copy하기&#xA;4. DataTable 생성. [항목], [연도], [월], [집행액] 으로 생성. Config에 설정한 날짜 기간 데이터 넣기&#xA;5. 브라우저 열어서 데이터 추출할 페이지로 이동&#xA;" DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="480,201.6" sap2010:WorkflowViewState.IdRef="State_2">
                       <State.Entry>
                         <TryCatch DisplayName="Try initializing settings and applications" sap:VirtualizedContainerService.HintSize="584,2941.6" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                           <sap:WorkflowViewStateService.ViewState>
